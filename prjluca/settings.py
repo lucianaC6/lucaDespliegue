@@ -87,11 +87,16 @@ WSGI_APPLICATION = 'prjluca.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.config(
+    #'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:ManguitoLola@localhost:5432/renderdb',
+        #default='postgresql://postgres:ManguitoLola@localhost:5432/renderdb',
+        #conn_max_age=600
+#)
+    'default': dj_database_url.config(
+        #Replace this value with your local database's connection string.
+        default='postgresql://postgress:ElRP54FVZlJlve7HlWQCeKW7XeMINfI5@dpg-d2fivf2dbo4c73bb3e00-a/renderbd_lka5',
         conn_max_age=600
-)
+    )
 }
 
 
